@@ -10,23 +10,15 @@ public class PrimesTillN {
 		int low = scn.nextInt();
 		int high = scn.nextInt();
 
-		for (int i = low; i <= high; i++) {
-			if(isPrime(i))
-				System.out.println(i);
-		}
+		primesTillN(low, high);
+		
 		scn.close();
 	}
 
-	public static boolean isPrime(int n) {
-
-		boolean isPrime = true;
-		for(int i = 2; i*i <= n; i++) {
-			if(n%i == 0) {
-				isPrime = false;
-				break;
-			}
+	public static void primesTillN(int low, int high) {
+		for (int i = low; i <= high; i++) {
+			if(IsAPrime.isPrime(i))
+				System.out.println(i);
 		}
-		return isPrime;
 	}
-
 }

@@ -9,12 +9,12 @@ public class AnyBaseMultiplication {
 		int n1 = scn.nextInt();
 		int n2 = scn.nextInt();
 
-		int d = getProduct(b, n1, n2);
+		int d = anyBaseMultiplication(b, n1, n2);
 		System.out.println(d);
 		scn.close();
 	}
 
-	public static int getProduct(int b, int n1, int n2) {
+	public static int anyBaseMultiplication(int b, int n1, int n2) {
 		int ans = 0;
 		int pow1 = 1;
 		int carry = 0;
@@ -38,7 +38,7 @@ public class AnyBaseMultiplication {
 				pow2 *= 10;
 			}
 			
-			ans = AnyBaseAddition.getSum(b, ans, tempAns*pow1);
+			ans = AnyBaseAddition.anyBaseAddition(b, ans, tempAns*pow1);
 			pow1 *= 10;
 			n2 /= 10;
 		}

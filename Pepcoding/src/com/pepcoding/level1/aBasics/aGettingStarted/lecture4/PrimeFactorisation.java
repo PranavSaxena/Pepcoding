@@ -6,6 +6,11 @@ public class PrimeFactorisation {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();
+		primeFactorisation(n);
+		scn.close();
+	}
+	
+	public static void primeFactorisation(int n) {
 		for(int div = 2; div*div<=n; div++) {
 			while(n%div==0) {
 				n=n/div;
@@ -14,6 +19,5 @@ public class PrimeFactorisation {
 		}
 		if(n>1)
 			System.out.print(n);
-		scn.close();
 	}
 }

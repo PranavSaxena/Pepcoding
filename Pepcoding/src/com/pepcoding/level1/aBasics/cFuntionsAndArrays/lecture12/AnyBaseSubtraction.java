@@ -15,7 +15,7 @@ public class AnyBaseSubtraction {
 	}
 
 	public static int anyBaseSubtraction(int b, int n1, int n2){
-
+		
 		return 0;
 	}
 }

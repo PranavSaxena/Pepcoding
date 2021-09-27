@@ -9,13 +9,13 @@ public class AnyBaseAddition {
 		int n1 = scn.nextInt();
 		int n2 = scn.nextInt();
 
-		int d = getSum(b, n1, n2);
+		int d = anyBaseAddition(b, n1, n2);
 		System.out.println(d);
 
 		scn.close();
 	}
 
-	public static int getSum(int b, int n1, int n2){
+	public static int anyBaseAddition(int b, int n1, int n2){
 
 		int sum = 0;
 		int carry = 0;
