@@ -15,6 +15,7 @@ public class BinarySearch {
 		int index = binarySearch(arr, data);
 		
 		System.out.println(index);
+		
 		scn.close();
 	}
 	

@@ -24,5 +24,6 @@ public class SubArrays {
 				System.out.println();
 			}
 		}
+		
 	}
 }

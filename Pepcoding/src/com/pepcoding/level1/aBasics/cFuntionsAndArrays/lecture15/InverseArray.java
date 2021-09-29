@@ -8,14 +8,13 @@ public class InverseArray {
 
 		int n = scn.nextInt();
 		int[] arr = new int[n];
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr.length; i++)
 			arr[i] = scn.nextInt();
-		}
 		int[] inv = inverse(arr);
 	
 		for(int i = 0; i<inv.length; i++)
 			System.out.print(inv[i] + " ");
-		
+	
 		scn.close();
 	}
 
@@ -24,7 +23,7 @@ public class InverseArray {
 		
 		for(int i = 0; i<arr.length; i++)
 			inv[arr[i]] = i;
-		
+
 		return inv;
 	}
 
