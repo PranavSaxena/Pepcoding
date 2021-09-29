@@ -23,7 +23,6 @@ public class SubArrays {
 					System.out.print(arr[k] + " ");
 				System.out.println();
 			}
-		}
-		
+		}	
 	}
 }
