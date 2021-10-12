@@ -10,7 +10,7 @@ public class MatrixMultiplication {
 		
 		int n1 = scn.nextInt();
 		int m1 = scn.nextInt();
-		
+	
 		int[][] arr1 = new int[n1][m1];
 		
 		for(int i=0; i<arr1.length; i++) {
