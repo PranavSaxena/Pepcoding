@@ -12,8 +12,20 @@ public class ToggleCase {
 	}
 
 	public static String toggleCase(String str){
-		
-		return null;
-	}
 
+		StringBuilder sb = new StringBuilder(str);
+		char ch;
+
+		for(int i=0; i<str.length(); i++) {
+			if(sb.charAt(i)<97)	{
+				ch = (char)(sb.charAt(i)+32);
+				sb.setCharAt(i, ch);
+			}
+			else {
+				ch = (char)(sb.charAt(i)-32);
+				sb.setCharAt(i, ch);
+			}
+		}
+		return sb.toString();
+	}
 }
