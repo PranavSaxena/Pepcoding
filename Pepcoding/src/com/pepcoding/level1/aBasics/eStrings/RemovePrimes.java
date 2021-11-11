@@ -13,6 +13,7 @@ public class RemovePrimes {
 		for(int i = 0 ; i < n; i++){
 			list.add(scn.nextInt());
 		}
+		
 		list = removePrimes(list);
 		System.out.println(list);
 		scn.close();
