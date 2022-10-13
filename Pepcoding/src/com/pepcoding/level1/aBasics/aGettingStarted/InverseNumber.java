@@ -15,15 +15,13 @@ public class InverseNumber {
 	public static int inverseNumber(int n) {
 
 		int inverse = 0;
-		int place = 1;
+		int i = 1;
 
-		while(n!=0) {
-			inverse += place * (int) Math.pow(10, (n%10) - 1);
+		while(n>0) {
+			inverse += i++ * (int) Math.pow(10, (n%10)-1);
 			n /= 10;
-			place++;
 		}
-
 		return inverse;
 	}
-	
+
 }
